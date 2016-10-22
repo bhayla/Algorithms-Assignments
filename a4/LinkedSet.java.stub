@@ -1,0 +1,170 @@
+/**
+*  Linked list implmentation for ADT Set
+*  @author [DON'T FORGET YOUR NAME]
+*/
+import java.util.Iterator;
+
+public class LinkedSet<EltType>
+             implements Set<EltType>
+{
+   /**
+   * Create an empty set.
+   */
+   public LinkedSet()
+   {  /* fill this in */
+   }
+
+   /**
+   *   Create an empty set.
+   *   @param comparator to be used for all element comparisons 
+   */   
+   public LinkedSet(Comparator<EltType> c)
+   {   /* fill this in */  
+   }
+   
+   /**
+   *   Create singleton set containing  the specified element
+   *   @param the element 
+   */
+   public LinkedSet(EltType elt)
+   {  /* fill this in */
+   }
+
+   /**
+   *   Create singleton set containing  the specified element
+   *   @param the element 
+   *   @param comparator to be used for all element comparisons 
+   */
+   public LinkedSet(Comparator<EltType> c, EltType elt)
+   {  /* fill this in */
+   }
+
+
+   /**
+   * Return the number of elements in this set
+   * @return size of set
+   */
+   public int size()
+   {  /* fill this in */
+   }
+   
+   /**
+   * Return true if this set is empty, false otherwise.
+   * @return emptiness flag
+   */
+   public boolean isEmpty()
+   {  /* fill this in */
+   }
+   
+
+   /**
+   * Add element newElt to the list. Has no effect if element
+   * is already present.
+   * @param newElt-- the element to be added
+   */
+   public void add(EltType newElt)
+   {  /* fill this in */
+   }
+
+   /**
+   *   Return true if this set contains the specified element
+   *   i.e. if checkElement is a member of this set.
+   *   @param checkElement-the candidate member
+   *   @return boolean membership indication
+   */   
+   public boolean contains(EltType checkElement)
+   {  /* fill this in */
+   }
+
+   /**
+   *  Remove the specified element from this set if it is 
+   *  present. 
+   *   @param remElement-- the element to be removed
+   */
+   public void remove(EltType remElement)
+   {  /* fill this in */
+   }
+
+   /**
+   *   Add all of the elements in the set addSet to this 
+   *   set if they're not already present. The addAll operation 
+   *   effectively modifies this set so that its value is the 
+   *   union of the two sets.
+   *   @param addSet-- the elements to be added
+   */
+   public void addAll(Set addSet)
+   {  /* fill this in */
+   }
+   
+
+   
+   /**
+   *   Return true if this set contains all of the elements 
+   *   of the specified set i.e. returns true if it is a subset 
+   *   of this set.
+   *   @param checkSet-- the candidate subset
+   *   @return boolean subset indication
+   */   
+   public boolean containsAll(Set checkSet)
+   {  /* fill this in */   
+   }
+   
+   
+   /**
+   *   Remove from this set all of its elements that are 
+   *   contained in the specified set. This operation 
+   *   effectively modifies this set so that its value is 
+   *   the asymmetric set difference of the two sets.
+   *   @param remSet-- the elements to be removed
+   */
+   public void removeAll(Set remSet)
+   {  /* fill this in */
+   }
+   
+   /**
+   *   Retain only the elements in this set that are 
+   *   contained in the specified set. This operation 
+   *   effectively modifies this set so that its value 
+   *   is the intersection of the two sets.
+   *   @param retSet-- the elemnets to be retained
+   */
+   public void retainAll(Set retSet)
+   {  /* fill this in */
+   }
+   
+   /**
+   *   Return a list of the elements in this set. 
+   *   The elements are returned in no particular order .
+   *   @return the elements of this set
+   *
+   */
+   public Iterator<EltType> iterator()
+   {  /* fill this in */
+   }
+
+   
+   /**
+   *   Return a list of the elements in this set. 
+   *   The elements are returned in no particular order .
+   *   @return the elements of this set
+   *
+   */
+   public Iterator<EltType> elements()
+   {  /* fill this in */
+   }
+   
+
+   
+   /* device to compare items of type EltType */
+   private Comparator<EltType> comp; 
+   
+   /* Number of items in the set */
+   private int numElts;  
+   
+   /* Special head sentinel */
+   private LLNode<EltType> head;  
+   
+   /* Special tail sentinel */
+   private LLNode<EltType> tail; 
+
+}
